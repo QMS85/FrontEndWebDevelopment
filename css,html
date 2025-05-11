@@ -9,9 +9,9 @@
 <header>
     <h1>CSS Mastery</h1>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="css.html">CSS</a> |
-        <a href="javascript.html">JavaScript</a>
+        <button onclick="redirectTo('index.html')">HTML</button>
+        <button onclick="redirectTo('css.html')">CSS</button>
+        <button onclick="redirectTo('javascript.html')">JavaScript</button>
     </nav>
 </header>
 <main>
