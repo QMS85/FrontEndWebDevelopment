@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Course - Front-End Web Development Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>CSS Mastery</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="css.html">CSS</a> |
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Lesson 1: CSS Fundamentals</h2>
+        <p>
+            CSS (Cascading Style Sheets) controls the appearance of web pages. It separates content (HTML) from presentation (colors, fonts, layouts).
+        </p>
+        <h3>Code Snippet: Basic Styling</h3>
+        <pre><code>
+body {
+  background: #f0f4f8;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  color: #0a84ff;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  padding: 10px 0;
+}
+        </code></pre>
+        <h4>Detailed Step-by-Step Explanation</h4>
+        <ol>
+            <li><strong>body:</strong> Sets the general background, font, and text color for the whole page.</li>
+            <li><strong>h1:</strong> Changes the color of all main headings and centers them.</li>
+            <li><strong>p:</strong> Increases the font size, improves readability, and adds vertical padding.</li>
+        </ol>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Change the background color to your favorite color.</li>
+            <li>Make all paragraphs italic.</li>
+            <li>Center all images on the page using a CSS selector.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lesson 2: Flexbox Layout</h2>
+        <p>Flexbox is a powerful layout model that allows you to create flexible and responsive layouts.</p>
+        <h3>Code Snippet: Flexbox Grid</h3>
+        <pre><code>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+  padding: 24px;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+        </code></pre>
+        <h4>Explanation</h4>
+        <ol>
+            <li><strong>display: flex;</strong> turns <code>.container</code> into a flex container.</li>
+            <li><strong>flex-wrap: wrap;</strong> makes the items wrap to the next line when needed.</li>
+            <li><strong>gap:</strong> adds space between child elements.</li>
+            <li><strong>.card:</strong> sets the card appearance, size, and makes it responsive.</li>
+        </ol>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Create a flex container with three cards. Make the cards stack vertically on small screens using a media query.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lesson 3: Responsive Design with Media Queries</h2>
+        <h3>Code Snippet: Media Query</h3>
+        <pre><code>
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  h1 {
+    color: #d7263d;
+  }
+}
+        </code></pre>
+        <h4>Explanation</h4>
+        <ul>
+            <li>When the screen is 600px or less, <code>.container</code> stacks its items vertically and adds padding.</li>
+            <li>The <code>h1</code> color changes for smaller screens, making your site adaptable for mobile devices.</li>
+        </ul>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Add a media query to make all text centered on screens smaller than 500px.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Tips, Tricks & Resources</h2>
+        <ul>
+            <li>Use <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks Flexbox Guide</a> for quick layout solutions.</li>
+            <li>Try <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a> for hands-on Flexbox practice.</li>
+            <li>Utilize CSS variables for theming:</li>
+        </ul>
+        <pre><code>
+:root {
+  --primary: #0a84ff;
+}
+
+h1 {
+  color: var(--primary);
+}
+        </code></pre>
+        <ul>
+            <li>Use browser DevTools to live-edit your CSS and experiment quickly.</li>
+        </ul>
+        <h3>GitHub Resources</h3>
+        <ul>
+            <li><a href="https://github.com/necolas/normalize.css" target="_blank">normalize.css</a> - CSS Reset</li>
+            <li><a href="https://github.com/jgthms/bulma" target="_blank">Bulma</a> - Modern CSS framework</li>
+            <li><a href="https://github.com/saadeghi/daisyui" target="_blank">daisyUI</a> - Tailwind CSS Components</li>
+        </ul>
+        <h3>Further Study</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+            <li><a href="https://frontendmasters.com/learn/css/" target="_blank">Frontend Masters: CSS</a></li>
+        </ul>
+        <h3>Project Ideas</h3>
+        <ul>
+            <li>Personal Portfolio with Flexbox and Grid</li>
+            <li>Responsive Image Gallery</li>
+            <li>Theme Switcher (Light/Dark Mode)</li>
+        </ul>
+        <h3>Recommended Courses & Languages</h3>
+        <ul>
+            <li>Learn <strong>Sass</strong> for advanced CSS</li>
+            <li><a href="https://www.coursera.org/learn/advanced-styling" target="_blank">Coursera: Advanced Styling with Responsive Design</a></li>
+            <li>Explore <a href="https://theodinproject.com/" target="_blank">The Odin Project</a> for hands-on curriculum</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>© 2025 Front-End Web Development Academy</p>
+</footer>
+</body>
+</html>
