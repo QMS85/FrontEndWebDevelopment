@@ -22,3 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
             .replace(/(function|const|let|var|document|alert|prompt)/g, '<span style="color: #005cc5;">$1</span>');
     });
 });
+
+
+/**CSS & JAVASCRIPT button redirects button
+         * Redirects the user to the specified page.
+         * @param {string} page - The name of the HTML page to redirect to.
+         */
+        function redirectTo(page) {
+            window.location.href = page;
+        }
