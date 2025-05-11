@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Course - Front-End Web Development Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>JavaScript Essentials</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="css.html">CSS</a> |
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Lesson 1: Variables, Data Types, and Output</h2>
+        <h3>Code Snippet: Declaring Variables and Outputting Data</h3>
+        <pre><code>
+let userName = "Alex";
+const year = 2025;
+
+console.log("Hello, " + userName + "! The year is " + year + ".");
+document.getElementById("output").textContent = `Welcome, ${userName}!`;
+        </code></pre>
+        <h4>Step-by-Step Explanation</h4>
+        <ol>
+            <li><strong>let</strong> creates a variable whose value can change.</li>
+            <li><strong>const</strong> creates a constant whose value cannot change.</li>
+            <li><strong>console.log()</strong> prints a message to the browser's console (press F12 to view).</li>
+            <li><strong>document.getElementById().textContent</strong> outputs a message to an element in your HTML.</li>
+        </ol>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Declare a variable for your favorite color and print it using <code>console.log</code>.</li>
+            <li>Add a <code>&lt;div id="js-output"&gt;&lt;/div&gt;</code> to your HTML and display a message using JavaScript.</li>
+        </ul>
+        <div id="output"></div>
+    </section>
+    <section>
+        <h2>Lesson 2: Functions and Events</h2>
+        <h3>Code Snippet: Click Event Handler</h3>
+        <pre><code>
+document.getElementById("myButton").onclick = function() {
+  alert("Button was clicked!");
+};
+        </code></pre>
+        <h4>Explanation</h4>
+        <ol>
+            <li>Selects the button with id <code>myButton</code>.</li>
+            <li>Assigns a function to its <code>onclick</code> event.</li>
+            <li>Shows an alert when the button is clicked.</li>
+        </ol>
+        <button id="myButton">Click Me</button>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Create a button that changes the background color of the page to a random color when clicked.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lesson 3: Arrays, Loops, and DOM Manipulation</h2>
+        <h3>Code Snippet: Displaying a List</h3>
+        <pre><code>
+const fruits = ["Apple", "Banana", "Cherry"];
+const ul = document.createElement("ul");
+
+for(let fruit of fruits) {
+  const li = document.createElement("li");
+  li.textContent = fruit;
+  ul.appendChild(li);
+}
+document.body.appendChild(ul);
+        </code></pre>
+        <h4>Explanation</h4>
+        <ol>
+            <li>Defines an array <code>fruits</code>.</li>
+            <li>Creates a <code>&lt;ul&gt;</code> element.</li>
+            <li>Loops through the array, creates <code>&lt;li&gt;</code> for each item, and appends to the list.</li>
+            <li>Appends the list to the page.</li>
+        </ol>
+        <h4>Exercise</h4>
+        <ul>
+            <li>Make a JavaScript array of your three favorite programming languages and display them as a list on the page.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Tips, Tricks & Resources</h2>
+        <ul>
+            <li>Use <code>console.log()</code> for debugging and understanding flow.</li>
+            <li>Try <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a> or <a href="https://codepen.io/" target="_blank">CodePen</a> to experiment with code quickly.</li>
+            <li>Use <a href="https://eslint.org/" target="_blank">ESLint</a> and <a href="https://prettier.io/" target="_blank">Prettier</a> for code quality and formatting.</li>
+        </ul>
+        <h3>GitHub Resources</h3>
+        <ul>
+            <li><a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a></li>
+            <li><a href="https://github.com/30-seconds/30-seconds-of-code" target="_blank">30 Seconds of Code</a></li>
+        </ul>
+        <h3>Further Study</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN JavaScript Guide</a></li>
+            <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+            <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp JavaScript Course</a></li>
+        </ul>
+        <h3>Project Ideas</h3>
+        <ul>
+            <li>To-Do List App</li>
+            <li>Interactive Quiz Game</li>
+            <li>Weather Dashboard (using an API)</li>
+        </ul>
+        <h3>Recommended Courses & Languages</h3>
+        <ul>
+            <li>Learn <strong>TypeScript</strong> after mastering JavaScript for type safety.</li>
+            <li><a href="https://frontendmasters.com/learn/beginner/" target="_blank">Frontend Masters Beginner Path</a></li>
+            <li><a href="https://theodinproject.com/" target="_blank">The Odin Project: Full Stack JavaScript</a></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>© 2025 Front-End Web Development Academy</p>
+</footer>
+<script>
+    // Variables, Data Types, and Output
+    let userName = "Alex";
+    const year = 2025;
+    document.getElementById("output").textContent = `Welcome, ${userName}!`;
+
+    // Functions and Events
+    document.getElementById("myButton").onclick = function() {
+        alert("Button was clicked!");
+    };
+</script>
+</body>
+</html>
