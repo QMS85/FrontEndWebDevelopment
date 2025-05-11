@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End Web Development Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Front-End Web Development Academy</h1>
+        <nav>
+            <button onclick="showSection('html')">HTML</button>
+            <button onclick="showSection('css')">CSS</button>
+            <button onclick="showSection('js')">JavaScript</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html" class="course-section">
+            <h2>HTML - HyperText Markup Language</h2>
+            <article>
+                <h3>Lesson 1: Introduction to HTML</h3>
+                <p>HTML is the standard markup language for creating web pages. It structures the content using elements called tags.</p>
+                <h4>Basic HTML Structure</h4>
+                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document as HTML5.</li>
+                    <li><code>&lt;html lang="en"&gt;</code>: Root element, with language attribute.</li>
+                    <li><code>&lt;head&gt;</code>: Contains meta-information (not displayed).</li>
+                    <li><code>&lt;body&gt;</code>: Contains the content visible to users.</li>
+                    <li><code>&lt;h1&gt;</code>: Main heading. <code>&lt;p&gt;</code>: Paragraph text.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Create a new HTML file.</li>
+                    <li>Add your name as a heading.</li>
+                    <li>Add a short paragraph about yourself.</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Lesson 2: Lists, Links, and Images</h3>
+                <pre><code class="language-html">&lt;h2&gt;My Favorite Websites&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developer.mozilla.org"&gt;MDN Web Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>&lt;ul&gt;</code>: Unordered list. <code>&lt;li&gt;</code>: List item.</li>
+                    <li><code>&lt;a href=""&gt;</code>: Anchor (link) to other sites.</li>
+                    <li><code>&lt;img src="" alt=""&gt;</code>: Displays an image with a description.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Create a list of your favorite programming resources with links.</li>
+                    <li>Add an image of your choice with an appropriate <code>alt</code> text.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="css" class="course-section" style="display:none;">
+            <h2>CSS - Cascading Style Sheets</h2>
+            <article>
+                <h3>Lesson 1: Styling Text and Layout</h3>
+                <pre><code class="language-css">body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #222;
+}
+
+h1 {
+  color: #0366d6;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+}
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>font-family</code>: Sets the font type.</li>
+                    <li><code>background-color</code>: Sets the background color.</li>
+                    <li><code>color</code>: Sets the text color.</li>
+                    <li><code>text-align</code>: Centers the heading.</li>
+                    <li><code>line-height</code>: Spacing between lines for readability.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Change the background color to your favorite color.</li>
+                    <li>Make all paragraphs have italic text.</li>
+                    <li>Center all images on the page.</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Lesson 2: Box Model & Responsive Design</h3>
+                <pre><code class="language-css">.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>width</code>, <code>margin</code>, <code>padding</code>: Control size and spacing.</li>
+                    <li><code>border</code>: Adds a border.</li>
+                    <li><code>box-sizing: border-box</code>: Includes padding and border in width calculation.</li>
+                    <li><code>@media</code>: Responsive design for screens up to 600px wide.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Apply the <code>container</code> class to your main content.</li>
+                    <li>Test your page on mobile and desktop — see how it adapts!</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="js" class="course-section" style="display:none;">
+            <h2>JavaScript - Programming the Web</h2>
+            <article>
+                <h3>Lesson 1: Basic Interactivity</h3>
+                <pre><code class="language-js">function greetUser() {
+  const name = prompt("What is your name?");
+  alert("Hello, " + name + "!");
+}
+greetUser();
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>function greetUser()</code>: Defines a function.</li>
+                    <li><code>prompt()</code>: Asks the user for input.</li>
+                    <li><code>alert()</code>: Shows a message box.</li>
+                    <li>Functions make code reusable and organized.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Create a function that asks for the user's favorite programming language and displays it in an alert.</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Lesson 2: DOM Manipulation</h3>
+                <pre><code class="language-js">// HTML: &lt;button id="changeColor"&gt;Change Background&lt;/button&gt;
+
+document.getElementById("changeColor").onclick = function() {
+  document.body.style.backgroundColor = "#ffe066";
+};
+                </code></pre>
+                <h5>Explanation:</h5>
+                <ul>
+                    <li><code>document.getElementById()</code>: Selects an HTML element by its ID.</li>
+                    <li><code>onclick</code>: Attaches a click event handler.</li>
+                    <li><code>document.body.style.backgroundColor</code>: Changes background color dynamically.</li>
+                </ul>
+                <h4>Exercise:</h4>
+                <ol>
+                    <li>Add a button to your HTML page to change the background to a random color when clicked.</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Front-End Web Development Academy</p>
+        <p>
+            Resources: 
+            <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN Web Docs</a> | 
+            <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> | 
+            <a href="https://github.com/awesome-selfhosted/awesome-selfhosted#web-based-learning" target="_blank">Awesome Self-Hosted Learning</a>
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
